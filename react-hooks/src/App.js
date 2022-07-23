@@ -7,6 +7,7 @@ import SignIn from './components/Signin';
 import SignUp from './components/Signup';
 import ListaCasas from "./components/ListaCasas";
 import Detalle from './components/Detalle';
+import Form from './components/Form'
 
 import {
   BrowserRouter as Router,
@@ -71,7 +72,7 @@ function App() {
         <Route path ="/signup" element={<SignUp/>}/>
         <Route path = "/casas/:id" element={<Detalle/>}/> {/*esta ruta nos envia el id de un departamento en especifico*/}
         <Route path = "/" element={<ListaCasas data={data}/>}/>
-        
+        <Route path = "/formulario-registro" element={<Form/>}/>
       </Routes>
       
       
